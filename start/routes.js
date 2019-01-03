@@ -21,7 +21,7 @@ Route.get('/', () => {
 })
 
 Route.group(() => {
-  Route.resource('devices', 'UserController')
+  Route.resource('devices', 'DeviceController')
   Route.get('devices/tracking', 'DeviceController.getTracking')
   Route.get('devices/count', 'DeviceController.getDeviceCount')
   Route.get('devices/get_device_history', 'DeviceController.getDevicesHistory')
