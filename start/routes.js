@@ -26,6 +26,10 @@ Route.group(() => {
   Route.get('devices/count', 'DeviceController.getDeviceCount')
   Route.get('devices/get_device_history', 'DeviceController.getDevicesHistory')
   Route.get(
+    'devices/get_devices_by_userID',
+    'DeviceController.getDevicesByUserID'
+  )
+  Route.get(
     'devices/get_device_history_by_road_offset',
     'DeviceController.getDeviceHistoryByRoadOffset'
   )

@@ -10,6 +10,12 @@ class DeviceController {
     return result
   }
 
+  async getDevicesByUserID ({ request, response }) {
+    const client = await soap.createClient(URL)
+    const result = await client.GetDevicesByUserID({ UserID: 16732 })
+    return result
+  }
+
   async getDeviceCount ({ request, response }) {
     const client = await soap.createClient(URL)
     const result = await client.GetDeviceCount({ UserID: 16732 })
